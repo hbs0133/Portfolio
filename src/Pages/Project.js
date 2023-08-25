@@ -51,7 +51,7 @@ const Project = ({images}) => {
   const [search, setSearch] = useState("")
 
   const getProduct = async () => {
-    let url = `https://my-json-server.typicode.com/hbs0133/Portfolio_DB`
+    let url = `https://my-json-server.typicode.com/hbs0133/Portfolio_DB/projects`
     let response = await fetch(url);
     let data = await response.json();
     setProjectList(data)
