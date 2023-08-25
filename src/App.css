@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  border-top: none;
+  border-bottom: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'MapoAgape';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoAgapeA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WandohopeR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  background-repeat: no-repeat;
+}
+.a{
+  flex-direction: column;
+  background: transparent;
+  resize: none;
+  position: relative;
+  color: #f0efef;
+  flex-direction: column;
+}

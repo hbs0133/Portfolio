@@ -1,0 +1,48 @@
+{
+  "projects":[
+      {
+        "id":1,
+        "img":"/static/media/netflix.a2cb1e4302b616790a08.png",
+        "title":"Netflix WebPage",
+        "responsive":false,
+        "date":"2023-07-28",
+        "stack":"React",
+        "info":"React를 활용하여 Netflix 페이지를 구현했습니다.",
+        "keyWord" : "React,리액트,반응형",
+        "tag" : "Netflix"
+        
+      },
+      {
+        "id":2,
+        "img":"/static/media/rafsimons.ef20b296a07980d1000c.png",
+        "title":"RafSimons WebPage",
+        "responsive":true,
+        "date":"2023-07-20",
+        "stack":"React",
+        "address" : "https://jolly-cupcake-b28765.netlify.app/",
+        "info":"React를 활용하여 간단한 쇼핑몰 페이지를 구현했습니다.",
+        "keyWord" : "React,리액트,적응형",
+        "tag" : "RafSimons"
+      },
+      {
+        "id":3,
+        "img":"/static/media/diary.22e6009329cafda59e93.png",
+        "title":"Diary Page",
+        "date":"2023-07-25",
+        "stack":"React",
+        "info" : "React를 활용하여 Diary 페이지를 구현했습니다.",
+        "keyWord" : "React,리액트,적응형",
+        "tag" : "Diary"
+      },
+      {
+        "id":4,
+        "img":"/static/media/todolist.1d8c2640daf804524877.png",
+        "title":"Todo List",
+        "date":"2023-07-27",
+        "stack":"React",
+        "info" : "React를 활용하여 TodoList 페이지를 구현했습니다.",
+        "keyWord" : "React,리액트,반응형",
+        "tag" : "Todo List" 
+      }
+  ]
+}
