@@ -24,6 +24,9 @@ const LinkBox = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size : 60px;
+  @media (max-width : 1701px){
+    flex-direction: column;
+  }
 `
 const About = styled.div`
   position: relative;
@@ -44,6 +47,7 @@ const About = styled.div`
     height: 40vh;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #999;
+    min-width : 300px;
   }
 `
 const Contact = styled.div`
@@ -64,6 +68,7 @@ const Contact = styled.div`
     height: 50vh;
     box-shadow: 5px 5px 10px #999;
     border-radius: 8px;
+    min-width : 300px;
   }
 `
 

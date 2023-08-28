@@ -6,6 +6,7 @@ import Tape from './Tape';
 
 const Container = styled.div`
   width: 60vw;
+  min-width : 400px;
   height: 55vh;
   box-shadow: 5px 5px 10px #999;
   border-radius: 8px;

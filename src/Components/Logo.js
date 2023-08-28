@@ -7,6 +7,7 @@ const Wrap = styled.div`
   svg{
     cursor : pointer;
     width : 15vw;
+    min-width : 180px;
     transition: 0.3s;
     &:hover {
       scale : 1.05;

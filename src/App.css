@@ -31,10 +31,5 @@
   background-repeat: no-repeat;
 }
 .a{
-  flex-direction: column;
-  background: transparent;
-  resize: none;
-  position: relative;
-  color: #f0efef;
-  flex-direction: column;
+  
 }

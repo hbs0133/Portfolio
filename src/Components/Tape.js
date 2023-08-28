@@ -26,7 +26,7 @@ const Wrap = styled.div`
   height : 80px;
   rotate: -45deg;
   z-index : 1;
-  font-size : 2.5vw;
+  font-size : 2.3vw;
   font-weight : bold;
   font-family: 'MYYeongnamnu';
   animation: ${TapeAni} 1.3s ease-in-out ;

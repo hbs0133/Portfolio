@@ -20,7 +20,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100%;
   gap : 10px;
   cursor: pointer;
   position: relative;
