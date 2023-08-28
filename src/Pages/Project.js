@@ -14,12 +14,11 @@ const Container = styled.div`
   padding-bottom : 100px;
 `
 const ProjectBox = styled.div`
+  width : 80vw;
   display : grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap : 50px 70px;
-  height : 70vh;
   margin-top : 50px;
-  margin-bottom : 100px;
 `
 const SearchBar = styled.div`
   margin-top : 60px;

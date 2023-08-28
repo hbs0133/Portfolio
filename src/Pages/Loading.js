@@ -49,6 +49,7 @@ const Line3 = styled(Line)`
 const Text = styled.text`
   opacity: 0;
   animation: ${fadeIn} 1s 3s forwards;
+  font-family: 'MYYeongnamnu';
 `;
 
 
@@ -75,7 +76,7 @@ const Loading = () => {
         <Line1 d="M189.315 29L86 405.067" stroke="black" />
         <Line2 d="M335.315 13L232 389.067" stroke="black" />
         <Line3 d="M22 285L350 261" stroke="black" />
-        <Text id="Hwang" fill="black" xmlSpace="preserve" fontFamily="Brush Script MT" fontSize="30" fontStyle="italic" letterSpacing="0em">
+        <Text id="Hwang" fill="black" xmlSpace="preserve" fontSize="30" fontStyle="italic" letterSpacing="0em">
           <tspan x="127" y="394.762">Hwang</tspan>
         </Text>
       </g>

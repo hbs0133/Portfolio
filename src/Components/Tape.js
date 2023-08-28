@@ -22,11 +22,11 @@ const Wrap = styled.div`
   left : -130px;
   background-image: url(${tape});
   background-size: cover;
-  width : 280px;
-  height : 70px;
+  width : 14vw;
+  height : 80px;
   rotate: -45deg;
   z-index : 1;
-  font-size : 48px;
+  font-size : 2.5vw;
   font-weight : bold;
   font-family: 'MYYeongnamnu';
   animation: ${TapeAni} 1.3s ease-in-out ;

@@ -5,7 +5,6 @@ import Tape from './Tape';
 
 
 const Container = styled.div`
-  position: relative;
   width: 60vw;
   height: 55vh;
   box-shadow: 5px 5px 10px #999;
@@ -14,11 +13,17 @@ const Container = styled.div`
   transition : 0.3s;
   &:hover{
     div{
-      transition : 0.5s;
-      scale : 1.1;
+      div{
+        transition : 0.5s;
+        scale : 1.1;
+      }
     }
   }
 `;
+
+const ImageBox = styled.div`
+  position: relative;
+`
 
 const Image = styled.img`
   position: absolute;
@@ -51,9 +56,11 @@ useEffect(() => {
 
   return (
     <Container onClick={() => navigate("/project")}>
-      <Tape text={"Project"} />
       {images.map((image, index) => (
-        <Image key={index} src={image} isCurrent={index === currentImgIndex} />
+        <ImageBox>
+          <Image key={index} src={image} isCurrent={index === currentImgIndex} />
+          <Tape text={"Project"} />
+        </ImageBox>
       ))}
     </Container>
   )

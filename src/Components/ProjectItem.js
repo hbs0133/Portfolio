@@ -26,7 +26,9 @@ const Container = styled.div`
   position: relative;
   &:hover{
     div:first-child{
-      animation: ${TapeAni} 1s ease-in-out ;
+      div{
+        animation: ${TapeAni} 1s ease-in-out ;
+      }
     }
   }
 ` 
@@ -42,16 +44,17 @@ const Tape = styled.div`
   width : 180px;
   height : 60px;
   rotate: -45deg;
-  top : -15px;
+  top : 0px;
   left : -75px;
   font-size : 30px;
   font-weight : bold;
   font-family: 'MYYeongnamnu';
 `
 const Img = styled.div`
+  position: relative;
   img{
-    width :500px;
-    height : 400px;
+    width : 24vw;
+    height : 40vh;
     border-radius: 8px;
     box-shadow: 5px 5px 5px #888;
   }
@@ -77,8 +80,10 @@ const ProjectItem = ({item}) => {
   return (
     <>
     <Container onClick={ModalHandler}>
+      <Img>
+      <img src={item.img} />
       <Tape >{item.tag}</Tape>
-      <Img><img src={item.img} /></Img>
+      </Img>
       <Title>{item.title}</Title>
       <Date>{item.date}</Date>
       <Stack>{item.stack}</Stack>
