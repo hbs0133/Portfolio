@@ -4,7 +4,7 @@ import Logo from '../Components/Logo'
 import Gnb from '../Components/Gnb'
 import Accordion from '../Components/Accordion'
 import tape from '../Img/tape2.png'
-import profile from '../Img/hwang.jpg'
+import profile from '../Img/profile.jpeg'
 
 const TapeAni = keyframes`
   from {
@@ -33,6 +33,40 @@ const AboutMeBox = styled.div`
   border-radius : 8px;
   position: relative;
   box-shadow: 2px 2px 5px #999;
+  @media (max-width : 1000px){
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width : 699px){
+    padding : 50px 20px;
+    gap : 30px;
+  }
+`
+
+
+const AboutMeImg = styled.img`
+    border-radius : 8px;
+    width : 300px;
+    @media (max-width : 699px){
+      width : 270px;
+    }
+`
+const AboutMeText = styled.div`
+  font-weight : 600;
+  display : flex;
+  flex-direction: column;
+  gap : 40px;
+  @media (max-width : 699px){
+    font-size : 15px;
+  }
+`
+
+const AboutMeSlogan = styled.h1`
+  font-size : 26px;
+  @media (max-width : 699px){
+    font-size : 21px;
+    font-weight : bold;
+  }
 `
 
 const AboutUl = styled.ul`
@@ -40,7 +74,6 @@ const AboutUl = styled.ul`
   flex-direction: column;
   gap : 10px;
 `
-
 const AboutDownloadButton = styled.button`
   text-decoration: none;
   color : #000;
@@ -55,24 +88,10 @@ const AboutDownloadButton = styled.button`
     background-color: #000;
     color : #fff;
   }
-}
-`
-
-const AboutMeImg = styled.div`
-  img{
-    scale : 1.1;
-    border-radius : 8px;
+  @media (max-width : 699px){
+    display : none;
   }
-`
-const AboutMeText = styled.div`
-  font-weight : 600;
-  display : flex;
-  flex-direction: column;
-  gap : 40px;
-`
-
-const AboutMeSlogan = styled.h1`
-  font-size : 26px;
+}
 `
 
 const SkillsBox = styled.div`
@@ -91,17 +110,20 @@ const Tape = styled.div`
   width : 200px;
   height : 60px;
   rotate: -45deg;
-  top : -20px;
+  top : 0px;
   left : -100px;
   font-size : 30px;
   font-weight : bold;
   font-family: 'MYYeongnamnu';
   animation: ${TapeAni} 1.3s ease-in-out ;
+  @media (max-width : 699px){
+    width : 120px;
+    font-size : 20px;
+    top : -30px;
+    left : -45px;
+  }
 `
 
-const Bg = styled.div`
-
-`
 
 const About = () => {
 
@@ -115,18 +137,19 @@ const About = () => {
   };
 
   return (
+    <>
+    <Gnb />
     <Container>
       <Logo />
-      <Gnb />
       <AboutMeBox>
         <Tape>AboutMe</Tape>
-        <AboutMeImg><img src={profile} /></AboutMeImg>
+        <AboutMeImg src={profile} />
         <AboutMeText>
           <AboutMeSlogan>" 나는 가치를 개발한다 "</AboutMeSlogan>
           안녕하세요 가치를 개발하고 싶은 개발자 황병선입니다. <br />
           <AboutUl>
             <li>이름 : 황병선</li>
-            <li>생년월일 : 98.10.07(만 24세)</li>
+            <li>생년월일 : 98.10.07</li>
             <li>교육사항 : <br />
               2023.02 - 2023.08	웹퍼블리셔&리엑트(React)활용 <br />
                 프론트엔드 웹 SW개발자 과정 수료<br />
@@ -139,13 +162,14 @@ const About = () => {
       </AboutMeBox> 
       <SkillsBox>
         <Tape>Skills</Tape>
-        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png"} header={"HTML"} content={"시멘틱 태그를 활용하여 원할한 개발이 가능합니다"}/>
-        <Accordion logoUrl={"https://blog.kakaocdn.net/dn/da9XH7/btqTtqEtQyh/n9Wt8iAKzE0FCaSm4c20T1/img.png"} header={"CSS & SASS"} content={"콘텐츠2"}/>
-        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png"} header={"JavaScript"} content={"콘텐츠3"}/>
-        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/220px-Typescript.svg.png"} header={"TypeScript"} content={"콘텐츠3"}/>
-        <Accordion  logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png"} header={"React"} content={"콘텐츠4"}/>
+        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png"} header={"HTML"} content={"HTML을 사용하여 웹 개발을 진행하여 시멘틱 태그의 활용을 통해 웹 페이지의 구조를 명확하게 정의하고, 코드의 가독성을 향상시킬 수 있습니다."}/>
+        <Accordion logoUrl={"https://blog.kakaocdn.net/dn/da9XH7/btqTtqEtQyh/n9Wt8iAKzE0FCaSm4c20T1/img.png"} header={"CSS & SASS"} content={"CSS와 SCSS를 사용하여 웹 디자인 및 스타일링을 지원할 수 있습니다. 이를 통해 웹 페이지의 시각적 디자인을 개선하고 스타일 시트를 효율적으로 작성할 수 있습니다."}/>
+        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png"} header={"JavaScript"} content={"JavaScript를 활용하여 웹 개발을 지원할 수 있습니다. 이를 통해 웹 페이지에 동적 기능을 추가하고 사용자와의 상호작용을 개선할 수 있습니다."}/>
+        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/220px-Typescript.svg.png"} header={"TypeScript"} content={"Type script를 사용하여 웹 개발을 지원할 수 있으며, 간단한 타입 정의를 통해 코드의 안정성을 향상시킬 수 있습니다."}/>
+        <Accordion logoUrl={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png"} header={"React"} content={"React를 활용하여 웹 애플리케이션 개발을 지원할 수 있으며, 컴포넌트 기반의 구조를 활용하여 웹 앱을 구축하고 사용자 경험을 향상시킬 수 있습니다"}/>
       </SkillsBox>
     </Container>
+    </>
   )
 }
 

@@ -5,10 +5,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width : 25vw;
+  width : 500px;
   border-radius: 4px;
   border: 1px solid #999;
   background-color : #eee;
+  @media (max-width : 699px){
+    width : 380px;
+  }
 `
 
 const Header = styled.div`

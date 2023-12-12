@@ -72,17 +72,13 @@ const GlobalStyle = createGlobalStyle`
 
 const Wrap = styled.div`
   font-family: 'Pretendard-Regular';
-  width : 100vw;
-  height : 100%;
   background-image: url(${bgImg});
   background-size: cover;
-  // background-position: center;
   background-repeat: no-repeat;
 `
 
 function App() {
-
-
+  
   const images = [
     rafSimoms,
     netflix,

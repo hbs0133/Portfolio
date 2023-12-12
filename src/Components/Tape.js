@@ -22,14 +22,30 @@ const Wrap = styled.div`
   left : -130px;
   background-image: url(${tape});
   background-size: cover;
-  width : 14vw;
+  width : 280px;
   height : 80px;
   rotate: -45deg;
   z-index : 1;
-  font-size : 2.3vw;
+  font-size : 48px;
   font-weight : bold;
   font-family: 'MYYeongnamnu';
   animation: ${TapeAni} 1.3s ease-in-out ;
+  @media (max-width : 800px) {
+    width : 200px;
+    left : -100px;
+    font-size : 40px;
+  }
+  @media (max-width : 768px) {
+    width : 150px;
+    left : -80px;
+    font-size : 25px;
+  }
+  @media (max-width : 481px) {
+    width : 120px;
+    left : -60px;
+    top : -30px;
+    font-size : 20px;
+  }
 `
 
 const Tape = ({text}) => {

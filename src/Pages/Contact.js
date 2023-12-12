@@ -19,13 +19,35 @@ const TapeAni = keyframes`
 
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-gap : 100px;
-height : 100%;
-padding-bottom : 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap : 100px;
+  height : 100%;
+  padding-bottom : 100px;
 `
+const ContactBox = styled.div`
+  border : 2px solid #999;
+  background : #eee;
+  box-shadow: 2px 2px 5px #999;
+  border-radius : 8px;
+  padding : 60px 90px;
+  position: relative;
+  @media (max-width : 699px){
+    padding : 40px 70px;
+  }
+  ul{
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+    font-size : 18px;
+    font-weight : bold;
+    @media (max-width : 699px){
+      font-size : 15px;
+    }
+  }
+`
+
 const MailForm = styled.form`
   display : flex;
   flex-direction: column;
@@ -38,6 +60,10 @@ const MailForm = styled.form`
   background : #eee;
   box-shadow: 2px 2px 5px #999;
   border-radius : 8px;
+  @media (max-width : 699px){
+    width : 350px;
+  }
+
 `
 const MailLabel = styled.label`
   font-family: 'MYYeongnamnu';
@@ -110,22 +136,14 @@ const Tape = styled.div`
   font-weight : bold;
   font-family: 'MYYeongnamnu';
   animation: ${TapeAni} 1.3s ease-in-out ;
-`
-const ContactBox = styled.div`
-  border : 2px solid #999;
-  background : #eee;
-  box-shadow: 2px 2px 5px #999;
-  border-radius : 8px;
-  padding : 60px 90px;
-  position: relative;
-  ul{
-    display : flex;
-    flex-direction: column;
-    gap : 20px;
-    font-size : 18px;
-    font-weight : bold;
+  @media (max-width : 699px){
+    top: -20px;
+    left : -60px;
+    width : 120px;
+    font-size : 25px;
   }
 `
+
 
 const Contact = () => {
 
@@ -143,9 +161,10 @@ const Contact = () => {
   };
 
   return (
+  <>
+    <Gnb />
     <Container>
       <Logo />
-      <Gnb />
       <ContactBox>
       <Tape>Contact</Tape>
         <ul>
@@ -165,6 +184,7 @@ const Contact = () => {
         <MailSendInput type="submit" value="Send" />
     </MailForm>
     </Container>
+  </>
   )
 }
 

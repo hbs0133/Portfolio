@@ -53,8 +53,9 @@ const Tape = styled.div`
 const Img = styled.div`
   position: relative;
   img{
-    width : 24vw;
+    width : 300px;
     height : 40vh;
+    object-fit: inherit;
     border-radius: 8px;
     box-shadow: 5px 5px 5px #888;
   }

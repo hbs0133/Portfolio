@@ -14,11 +14,16 @@ const Container = styled.div`
   padding-bottom : 100px;
 `
 const ProjectBox = styled.div`
-  width : 80vw;
   display : grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap : 50px 70px;
   margin-top : 50px;
+  @media (max-width : 1200px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width : 799px){
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 const SearchBar = styled.div`
   margin-top : 60px;
@@ -67,12 +72,13 @@ const Project = ({images}) => {
   const getSearchResult = () => {
     return search === "" ? projectList :projectList.filter((it) => it.keyWord.toLowerCase().includes(search.toLowerCase()))
   }
-  console.log(projectList.map((it) => it.keyWord));
+
+
   return (
     <>
+      <Gnb />
     <Container>
       <Logo />
-      <Gnb />
       <ProjectSlider images={images} />
       <SearchBar>
         <input type='text' onChange={onChangeSearch} value={search} placeholder='검색하고 싶은 기술을 입력하세요' />

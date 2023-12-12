@@ -5,33 +5,36 @@ import { useNavigate } from 'react-router-dom'
 const Container = styled.div`
   display: flex;
   position: relative;
+  justify-content: right;
+  align-items: center;
   gap : 120px;
-  border: 4px solid #000;
-  border-top : none;
-  padding : 10px 300px;
-  margin-bottom : 80px;
-  &::before{
-    content : "";
-    width : 1px;
-    height : 120px;
-    position: absolute;
-    border-left: 4px solid #000;
-    left : -4px;
-  }
-  &::after{
-    content : "";
-    width : 1px;
-    height : 120px;
-    position: absolute;
-    border-left: 4px solid #000;
-    right : -5px;
+  padding : 20px 30px;
+  margin-right : 20px;
+  // &::before{
+  //   content : "";
+  //   width : 1px;
+  //   height : 120px;
+  //   position: absolute;
+  //   border-left: 4px solid #000;
+  //   left : -4px;
+  // }
+  // &::after{
+  //   content : "";
+  //   width : 1px;
+  //   height : 120px;
+  //   position: absolute;
+  //   border-left: 4px solid #000;
+  //   right : -5px;
+  // }
+  @media (max-width : 800px){
+    gap : 50px;
   }
 `
 
 const Link = styled.div`
   cursor : pointer;
   font-weight: bold;
-  font-size : 32px;
+  font-size : 24px;
   transition: 0.3s;
   text-shadow: 3px 3px 1px #bbb;
   padding-bottom : 10px;

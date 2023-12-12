@@ -7,9 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import Tape from '../Components/Tape'
 
 import resume from '../Img/이력서.png'
-import profile from '../Img/profile.jpg'
-
-
+import profile from '../Img/profile.jpeg'
 
 const Container = styled.div`
   display: flex;
@@ -24,8 +22,10 @@ const LinkBox = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size : 60px;
-  @media (max-width : 1701px){
+  gap : 200px;
+  @media (max-width : 1801px){
     flex-direction: column;
+    gap : 0px;
   }
 `
 const About = styled.div`
@@ -43,11 +43,12 @@ const About = styled.div`
     }
   }
   img{
-    width : 15vw;
-    height: 40vh;
+    width : 300px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #999;
-    min-width : 300px;
+    @media (max-width : 767px) {
+      width : 200px;
+    }
   }
 `
 const Contact = styled.div`
@@ -64,11 +65,15 @@ const Contact = styled.div`
     }
   }
   img{
-    width : 30vw;
-    height: 50vh;
     box-shadow: 5px 5px 10px #999;
     border-radius: 8px;
-    min-width : 300px;
+    width : 600px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width : 500px;
+    }
+    @media (max-width : 767px) {
+      width : 300px;
+    }
   }
 `
 

@@ -8,8 +8,6 @@ const ModalWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +25,7 @@ const OverLay = styled.div`
 
 const ModalContent = styled.div`
   display : flex;
+  height : 95vh;
   flex-direction: column;
   position: relative;
   padding : 60px;
@@ -35,6 +34,18 @@ const ModalContent = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   z-index : 9999;
   gap : 10px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width : 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #888; /* 스크롤바의 색상 */
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+  }
 `;
 
 const ExitButtonBox = styled.div`
@@ -45,7 +56,7 @@ const ExitButtonBox = styled.div`
 
 const Img = styled.div`
   img{
-    width : 50vw;
+    height : 40vh;
   }
 `
 
