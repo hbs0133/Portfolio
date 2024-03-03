@@ -46,6 +46,10 @@ const ModalContent = styled.div`
   &::-webkit-scrollbar-track {
     background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
   }
+  @media (max-width : 699px){
+    width : 340px;
+    padding : 30px 20px;
+  }
 `;
 
 const ExitButtonBox = styled.div`
@@ -55,8 +59,15 @@ const ExitButtonBox = styled.div`
 `  
 
 const Img = styled.div`
+  height : 40vh;
   img{
-    height : 40vh;
+    width : inherit;
+    height : inherit;
+  }
+  @media (max-width : 699px){
+    margin-top : 50px;
+    width : 300px;
+    height : 250px;
   }
 `
 
@@ -64,6 +75,9 @@ const ProjectInfo = styled.div`
   display : flex;
   flex-direction: column;
   gap : 12px;
+  @media (max-width : 699px){
+    gap : 5px;
+  }
 `
 const Tag = styled.div`
   font-size: 16px;
@@ -71,10 +85,17 @@ const Tag = styled.div`
   margin-top : 50px;
   padding-top : 20px;
   border-top : 2px solid #000;
+  @media (max-width : 699px){
+    margin-top : 0;
+  }
+
 ` 
 const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
+  @media (max-width : 699px){
+    font-size : 25px;
+  }
 `
 const Date = styled.div`
   font-weight: bold;
