@@ -2,14 +2,15 @@
   "projects":[
       {
         "id":1,
-        "img":"/static/media/netflix.a2cb1e4302b616790a08.png",
-        "title":"Netflix WebPage",
-        "responsive":false,
-        "date":"2023-07-28",
-        "stack":"React",
-        "info":"React를 활용하여 Netflix 페이지를 구현했습니다.",
-        "keyWord" : "React,리액트,반응형",
-        "tag" : "Netflix"
+        "img":"/static/media/lipsomoon.d36617814ffc19cb22ed.png",
+        "title":"Lipsomoon",
+        "responsive":true,
+        "date":"2023-08-10",
+        "stack":"HTML,SCSS,JS",
+        "address" : "https://lipsomoon.netlify.app",
+        "info":"4인 팀프로젝트로 개발한 카페리뷰기능을 가진 입소문프로젝트입니다.",
+        "keyWord" : "반응형",
+        "tag" : "Lipsomoon"
         
       },
       {
@@ -19,10 +20,10 @@
         "responsive":true,
         "date":"2023-07-20",
         "stack":"React",
-        "address" : "https://jolly-cupcake-b28765.netlify.app/",
+        "address" : "https://rafsimons.netlify.app/",
         "info":"React를 활용하여 간단한 쇼핑몰 페이지를 구현했습니다.",
         "keyWord" : "React,리액트,적응형",
-        "tag" : "RafSimons"
+        "tag" : "Raf Simons"
       },
       {
         "id":3,
@@ -30,7 +31,8 @@
         "title":"Diary Page",
         "date":"2023-07-25",
         "stack":"React",
-        "info" : "React를 활용하여 Diary 페이지를 구현했습니다.",
+        "address" : "https://hwangdiary.netlify.app",
+        "info" : "React를 활용하여 일기를 작성할수있는 간단한 Diary 페이지를 구현했습니다.",
         "keyWord" : "React,리액트,적응형",
         "tag" : "Diary"
       },
@@ -40,9 +42,21 @@
         "title":"Todo List",
         "date":"2023-07-27",
         "stack":"React",
-        "info" : "React를 활용하여 TodoList 페이지를 구현했습니다.",
+        "address" : "https://hwangtodolist.netlify.app",
+        "info" : "React를 활용하여 할일을 작성할수있는 간단한 TodoList 페이지를 구현했습니다.",
         "keyWord" : "React,리액트,반응형",
         "tag" : "Todo List" 
+      },
+      {
+        "id":5,
+        "img":"/static/media/MBTITest.13f6c373e9726a99b3a0.png",
+        "title":"MBTI Test",
+        "date":"2023-07-30",
+        "stack":"React",
+        "address" : "https://hwangmbtitest.netlify.app",
+        "info" : "React를 활용하여 MBTI를 검사할수있는 MBTI Test페이지를 구현했습니다.",
+        "keyWord" : "React,리액트,반응형",
+        "tag" : "MBTI Test" 
       }
   ]
 }

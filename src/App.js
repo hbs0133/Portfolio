@@ -12,6 +12,7 @@ import { createGlobalStyle } from "styled-components";
 import bgImg from './Img/bg/2.jpg'
 
 //이미지
+import lipsomoon from './Img/lipsomoon.png'
 import rafSimoms from './Img/rafsimons.png'
 import netflix from './Img/netflix.png'
 import diary from './Img/diary.png'
@@ -80,6 +81,7 @@ const Wrap = styled.div`
 function App() {
   
   const images = [
+    lipsomoon,
     rafSimoms,
     netflix,
     diary,
